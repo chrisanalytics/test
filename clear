@@ -1,0 +1,500 @@
+   26  cp test.txt
+   27  cd ~
+   28  cd desktop
+   29  cp test.txt temp/
+   30  cd ~
+   31  cd temp
+   32  ls
+   33  test.txt
+   34  cd ~
+   35  cd desktop
+   36  ls
+   37  ls test.txt
+   38  cp test.txt temp/
+   39  stuff/
+   40  cp test.txt "I have fun"/
+   41  ls *.txt
+   42  cd ~
+   43  cd "I have fun"
+   44  ls
+   45  ls test.txt
+   46  cd ~
+   47  cd desktop
+   48  cp test.txt learn.txt
+   49  ls learn.txt
+   50  mv learn.txt temp/
+   51  mv learn.txt study.txt
+   52  ls *.txt
+   53  cp study.txt temp/
+   54  cp study.txt "I have fun"/
+   55  pwd
+   56  mkdir course/
+   57  cp study.txt course/
+   58  cd course
+   59  ls
+   60  python ex1.py
+   61  python 
+   62  cd temp
+   63  python ex1.py
+   64  cd desktop
+   65  python ex1.py
+   66  python ex1.py
+   67  python ex1.py
+   68  python ex2.py
+   69  python ex3.py
+   70  python ex3.py
+   71  python ex3.py
+   72  cd desktop
+   73  python ex4.py
+   74  python ex5.py
+   75  python ex5b.py
+   76  python ex5b.py
+   77  python exb.py
+   78  python ex5b.py
+   79  python ex5b.py
+   80  python ex5b.py
+   81  python ex6.py
+   82  python ex6.py
+   83  python ex6.py
+   84  python ex7.py
+   85  python ex7.py
+   86  python ex7.py
+   87  python ex7.py
+   88  python ex8.py
+   89  python ex8.py
+   90  python ex9.py
+   91  python ex15.py
+   92  cd desktop
+   93  cd lpth
+   94  python ex15.py
+   95  python ex15.py
+   96  python ex15.py
+   97  python ex15.py ex15_sample.txt
+   98  python ex15.py ex15_sample.txt
+   99  python ex16.py
+  100  python ex16.py ex16_delete.txt
+  101  python ex16.py ex16_delete
+  102  python ex16.py test.txt
+  103  python ex16.py test.txt
+  104  python ex16b.py test.txt
+  105  python ex16b.py test
+  106  python ex16.py ex15_sample.txt
+  107  python ex16.py ex15_sample.txt
+  108  echo "This is a test file." > test.txt
+  109  cat test.txt
+  110  python ex17.py test.txt new_file.txt
+  111  echo "This is a test file.> test.txt
+  112  cat test.txt
+  113  cd desktop
+  114  cd desktop
+  115  cd lpth
+  116  cd desktop
+  117  cd lpth
+  118  echo "This is a test file." > test.txt
+  119  cat test.txt
+  120  python ex17.py test.txt ex17_newfile.txt
+  121  cd desktop
+  122  cd lpth
+  123  python ex18.py
+  124  python ex18.py
+  125  python ex18b.py
+  126  python ex18b.py
+  127  python ex18b.py
+  128  python ex18c.py
+  129  python ex18c.py
+  130  python ex18c.py
+  131  python ex18c.py
+  132  python ex18c.py
+  133  python ex18c.py
+  134  python ex18c.py
+  135  python ex18c.py
+  136  python ex19.py
+  137  python e20.py test.txt
+  138  python ex20.py test.txt
+  139  python ex20.py test.txt
+  140  python ex21.py
+  141  python ex21.py
+  142  python ex21.py
+  143  python ex21.py
+  144  python ex21.py
+  145  python ex21.py
+  146  python ex21.py
+  147  cd desktop
+  148  cd lpth
+  149  python ex21.py
+  150  python ex21.py
+  151  python ex21.py
+  152  python ex21.py
+  153  python ex24.py
+  154  python ex24.py
+  155  python ex24.py
+  156  python ex24.py
+  157  python ex24.py
+  158  python ex24.py
+  159  python ex24.py
+  160  python ex24.py
+  161  python ex24.py
+  162  python ex24.py
+  163  python ex25.py
+  164  cd desktop
+  165  cd lpth
+  166  python ex25.py
+  167  python
+  168  cd desktop
+  169  cd lpth
+  170  python ex25.py
+  171  python
+  172  python
+  173  cd desktop
+  174  cd lpth
+  175  python ex26.py
+  176  python
+  177  not false
+  178  python
+  179  cd desktop
+  180  cd lpth
+  181  ex27
+  182  ex26
+  183  ex26.py
+  184  python
+  185  python ex29.py
+  186  python ex29.py
+  187  python ex30.py
+  188  cd desktop
+  189  cd lpth
+  190  python ex31.py
+  191  python ex31.py
+  192  python ex31.py
+  193  python ex31.py
+  194  python ex31.py
+  195  python ex31.py
+  196  python ex31.py
+  197  python ex31.py
+  198  python ex31.py
+  199  cd desktop
+  200  cd lpth
+  201  python ex32.py
+  202  python ex35.py
+  203  python ex35.py
+  204  python ex35.py
+  205  python ex35c.py
+  206  python ex35c.py
+  207  python ex35c.py
+  208  python ex35c.py
+  209  python ex38c.py
+  210  python
+  211  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  212  time = datetime.now() #2014-07-08 13:08:09
+  213  print time.day
+  214  python
+  215  pwd
+  216  ls
+  217  cd nyc16_ids2/
+  218  jupyter notebook
+  219  jupiter notebook
+  220  python
+  221  jupyter notebook
+  222  conda install seaborn
+  223  ls
+  224  cd nyc16_ids2/
+  225  jupyter notebook
+  226  pwd
+  227  python
+  228  jupyter notebook
+  229  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  230  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  231  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  232  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  233  conda install pip
+  234  pip install geopy
+  235  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  236  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  237  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  238  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  239  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  240  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  241  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  242  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  243  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  244  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  245  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  246  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  247  conda install pip
+  248  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  249  brew install graphviz
+  250  pip install pydotplus
+  251  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  252  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  253  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  254  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  255  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  256  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  257  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  258  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  259  ls
+  260  nyc16_ids2/
+  261  cd nyc16_ids2/
+  262  ls
+  263  cd notebooks/
+  264  ls
+  265  cd ~
+  266  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  267  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  268  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  269  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  270  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  271  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  272  conda install fastcluster
+  273  pip install fastcluster
+  274  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  275  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  276  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  277  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  278  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  279  python
+  280  python
+  281  def lpf(x):
+  282  lpf = 2;
+  283  while (x > lpf):
+  284  t("Largest Prime Factor: %d" % (lpf));
+  285  def main():
+  286  x = long(raw_input("Input long int:"))
+  287  lpf(x);
+  288  return 0;
+  289  if __name__ == '__main__':
+  290  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  291  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  292  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  293  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  294  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  295  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  296  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  297  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  298  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  299  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  300  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  301  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  302  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  303  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  304  conda update ipython
+  305  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  306  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  307  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  308  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  309  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  310  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  311  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  312  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  313  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  314  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  315  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  316  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  317  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  318  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  319  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  320  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  321  /Applications/anaconda/bin/jupyter_mac.command ; exit;
+  322  pwd
+  323  pwd
+  324  pwd
+  325  pwd
+  326  pwd
+  327  pwd
+  328  pwd
+  329  pwd
+  330  pwd
+  331  pwd
+  332  pwd
+  333  pwd
+  334  pwd
+  335  pwd
+  336  mkdir temp
+  337  mkdir temp/stuff
+  338  mkdir temp/stuff/things/frank/joe/alex/john
+  339  pwd
+  340  hostname
+  341  ssh chrisvallebc7_acvalle@216.230.88
+  342  ssh bc7_acvalle@216.230.88
+  343  l0l0p4Nj
+  344  ssh bc7_acvalle@216.230.88
+  345  ssh bc7_acvalle@216.230.88
+  346  ssh bc7_acvalle@216.230.228.88
+  347  ssh bc7_acvalle@216.230.228.88
+  348  pwd
+  349  ssh bc7_acvalle@216.230.228.88
+  350  clr
+  351  ls
+  352  clear
+  353  ls -a
+  354  ls -a -t
+  355  clear
+  356  ls -l
+  357  cd ..
+  358  pwd
+  359  cd ~
+  360  ls -l
+  361  mkdir -p ~/examples/multiple/levels/down
+  362  ls
+  363  ls -R ~/examples
+  364  ssh bc7_acvalle@216.230.228.88
+  365  ssh bc7_acvalle@216.230.228.88
+  366  ssh bc7_acvalle@216.230.228.88
+  367  ssh bc7_acvalle@216.230.228.88
+  368  ssh bc7_acvalle@216.230.228.88
+  369  ls
+  370  mkdir exercise_1b
+  371  clear
+  372  ls
+  373  cd datascience
+  374   echo "R is open-source software" >> data.txt
+  375  cat data.txt
+  376  echo "www" > www.txt
+  377  ls
+  378  git status
+  379  git add --all
+  380  git status
+  381  echo "test" > test.txt
+  382  git status
+  383  git add test.txt
+  384  git status
+  385  git reset HEAD test.txt
+  386  git status
+  387  clear
+  388  git add test.txt
+  389  git commit -m "add two new files, modify data.txt"
+  390  clear
+  391  gitgit config --list --global
+  392  git --version
+  393  git config --local user.name "chrisanalytics"
+  394  clear
+  395  git --version
+  396  git config --list
+  397  clear
+  398  git --version
+  399  git --help
+  400  git add --help
+  401  git status
+  402  ls
+  403  mkdir datascience
+  404  cd datascience
+  405  git init
+  406  ls
+  407  ls -a
+  408  echo "Git is open-source software" > data.txt
+  409  ls -a
+  410  git status
+  411  git add data.txt
+  412  git status
+  413  git commit -m "Add new data."
+  414  git status
+  415  git log
+  416  cd ~
+  417  mkdir exercise_1
+  418  ls
+  419  cd exercise_1
+  420  git init
+  421  touch sample.txt
+  422  echo "hello" > sample_content.txt
+  423  ls
+  424  git add sample.txt
+  425  git status
+  426  git commit --help
+  427  git commit -m "Add new data."
+  428  clear
+  429  ls
+  430  git status
+  431  git add sample.txt
+  432  git status
+  433  git commit - "add new data"
+  434  git log
+  435  ls
+  436  cd datascience
+  437  ls
+  438  git commit --help
+  439  ls
+  440  cd datascience/
+  441  ls
+  442  git status
+  443  rm test.txt
+  444  ls
+  445  ls -a
+  446  git status
+  447  git diff
+  448  git diff HEAD -- test.txt
+  449  git checkout -- test.txt
+  450  ls
+  451  git status
+  452  git rm test.txt
+  453  git status
+  454  git commit -m "delete test.txt"
+  455  git status
+  456  clear
+  457  git diff -- data.txt
+  458  clear
+  459  git diff -- data.txt
+  460  git diff data.txt
+  461  clear
+  462  open vi --help
+  463  git mv www.txt www2.txt
+  464  git status
+  465  git commit -a -m "rename www --> ww2"
+  466  echo "DS_Store" > .gitignore
+  467  cat .gitignore
+  468  git status
+  469  ls
+  470  echo " " > test.txt
+  471  ls
+  472  vi test.txt
+  473  ls
+  474  cd datascience/
+  475  ls
+  476  vi test.txt 
+  477  rm .test.txt.swp
+  478  vi test.txt 
+  479  ls
+  480  cd datascience/
+  481  ls
+  482  vi test.txt
+  483  vi test.txt 
+  484  cd datascience/
+  485  vi test.txt 
+  486  cd datascience/
+  487  cd ~
+  488  git clone https://github.com/chrisanalytics/chrisanalytics.github.io.git
+  489  clear
+  490  ls
+  491  cd chrisanalytics.github.io/
+  492  ls
+  493  cat READ.md
+  494  cat READ.md
+  495  cat README.md
+  496  git remote -v
+  497  vi README.md
+  498  vi README.md
+  499  vi README.md 
+  500  mkdir test
+  501  ls
+  502  cd test
+  503  git init
+  504  echo "Git is good" > a.txt
+  505  ls
+  506  git status
+  507  git add a.txt
+  508  git status
+  509  git commit -m "add new file"
+  510  git status
+  511  cd ..
+  512  pwd
+  513  cd ~
+  514  pwd
+  515  ls
+  516  cd test
+  517  ls
+  518  mkdir subtest
+  519  echo b.txt "Question 2" > b.txt
+  520  ls
+  521  touch a1.txt a2.txt
+  522  ls
+  523  git status
+  524  history 
+  525  history > clear
