@@ -1,0 +1,154 @@
+getwd()
+setwd("/Users/Chris.Valle/Desktop/DRAW_R/")
+
+install.packages("openxlsx")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("ggthemes")
+install.packages("maptools")
+install.packages("maps")
+install.packages("RColorBrewer")
+install.packages("corrplot")
+
+library(dplyr)
+library(ggplot2)
+library(maptools)
+library(maps)
+library(ggthemes)
+library(RColorBrewer)
+library(corrplot)
+library(openxlsx)
+library(reshape2)
+
+###############################
+
+df = read.csv("CSV_FI_DRAW_20170101_20170618.csv", header = TRUE,
+              stringsAsFactors = TRUE)
+
+summary(df)
+str(df)
+
+#Transformations
+df$Media.Buy.Key = lapply(df$Media.Buy.Key, factor) # convert columns to factors 
+df$Day2 = as.Date(df$Day, format = "%m/%d/%y")
+
+summary(df$Day2)
+summary(df$Impressions)
+summary(df$Total.Conversions)
+summary(df$Attributable.Conversions)
+
+# create Week column
+# week0 = > 5/20
+# week1 = 5/3 - 5/7
+# week2 = 5/8 - 5/14
+# week3 = 5/15 - 5/21
+# week4 = 5/22 - 5/28
+# week5 = 5/29 - 6/4
+# week6 = 6/5 - 6/11
+# week7 = 6/12 - 6/18
+
+#week1 = subset(df, Day2 > "2017-05-2" & Day2 < "2017-05-8") #week1
+#df$Week = NULL #deleted test column
+
+
+
+
+
+
+df_summ = group_by(df, WeekGrp)
+df_summ1 = summarise(df_summ, mean(Impressions))
+
+
+
+
+df2 = df %>%
+  tbl_df() %>%
+  select(WeekGrp, Impressions, Attributable.Conversions)%>%
+  group_by(WeekGrp)%>%
+  summarise(total_conv = sum(Attributable.Conversions), total_imp=sum(Impressions))
+
+
+df2 = df %>%
+  tbl_df() %>%
+  select(WeekGrp, Impressions, Attributable.Conversions)%>%
+  group_by(WeekGrp)%>%
+  summarise(total_conv = sum(Attributable.Conversions))
+
+View(df$Impressions)
+sum(df$Attributable.Conversions)
+df$imps = as.numeric(df$Impressions)
+sum(df$imps, na.rm = TRUE)
+
+
+
+df3 = df %>%
+  tbl_df() %>%
+  select(WeekGrp, Impressions, Attributable.Conversions)%>%
+  group_by(WeekGrp)%>%
+  filter(WeekGrp=="week7")%>%
+  summarise(total_conv = sum(Attributable.Conversions), total_imp=sum(Impressions, na.rm=TRUE), lpr = (total_conv/total_imp))
+
+
+df2 = df %>%
+  tbl_df() %>%
+  select(WeekGrp, Impressions, Attributable.Conversions, Clicks)%>%
+  group_by(WeekGrp)%>%
+  summarise(total_conv = sum(Attributable.Conversions), total_imp=sum(Impressions, na.rm=TRUE), 
+            lpr = (total_conv/total_imp), total_clicks= sum(Clicks, na.rm=TRUE),
+              ctr = sum(total_clicks/total_imp))
+
+# creative_type = RM
+# creative_type = STB
+# HTML5 Pushdown Banner = RM
+# HTML5 Single Expandable = RM
+# HTML5 Standard Banner = STB
+# Tracking Pixel = TP
+
+
+unique(df$Creative.Format, na.rm=TRUE)
+str(df$Creative.Format)
+
+df$CreativeType[which(df$Creative.Format == "HTML5 Pushdown Banner")] = "RM"
+df$CreativeType[which(df$Creative.Format == "HTML5 Single Expandable")] = "RM"
+df$CreativeType[which(df$Creative.Format == "HTML5 Standard Banner")] = "STB"
+df$CreativeType[which(df$Creative.Format == "Tracking Pixel")] = "TP"
+
+df4 = df %>%
+  tbl_df() %>%
+  select(WeekGrp, Impressions, Attributable.Conversions, Clicks, CreativeType)%>%
+  group_by(WeekGrp, CreativeType)%>%
+  filter(WeekGrp == "week7")%>%
+  summarise(total_conv = sum(Attributable.Conversions), total_imp=sum(Impressions, na.rm=TRUE), 
+            lpr = (total_conv/total_imp), total_clicks= sum(Clicks, na.rm=TRUE),
+            ctr = sum(total_clicks/total_imp))
+
+
+df2 = df %>%
+  tbl_df() %>%
+  select(WeekGrp, Impressions, Attributable.Conversions, Clicks)%>%
+  group_by(WeekGrp)%>%
+  summarise(total_conv = sum(Attributable.Conversions), total_imp=sum(Impressions, na.rm=TRUE), 
+            lpr = (total_conv/total_imp), total_clicks= sum(Clicks, na.rm=TRUE),
+            ctr = sum(total_clicks/total_imp))
+
+df5 = df %>%
+  tbl_df() %>%
+  select(WeekGrp,Impressions, Attributable.Conversions, Clicks, Clean.Site.Name)%>%
+  group_by(WeekGrp, Clean.Site.Name)%>%
+  summarise(total_conv = sum(Attributable.Conversions), total_imp=sum(Impressions, na.rm=TRUE), 
+            lpr = (total_conv/total_imp), total_clicks= sum(Clicks, na.rm=TRUE),
+            ctr = sum(total_clicks/total_imp))
+
+write.xlsx(df5, file= "fixedincome.xlsx")
+write.csv(df, file = "fixedincomefull.csv")
+
+
+df6 = df %>%
+  tbl_df() %>%
+  select(WeekGrp,Impressions, Attributable.Conversions, Clicks)%>%
+  group_by(WeekGrp)%>%
+  summarise(total_conv = sum(Attributable.Conversions), total_imp=sum(Impressions, na.rm=TRUE), 
+            lpr = (total_conv/total_imp), total_clicks= sum(Clicks, na.rm=TRUE),
+            ctr = sum(total_clicks/total_imp))
+
+dcastDF5 = dcast(df5, Clean.Site.Name ~WeekGrp, value.var='total_imp', fun.aggregate = sum)
